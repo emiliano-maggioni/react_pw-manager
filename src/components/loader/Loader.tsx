@@ -1,12 +1,12 @@
 import { CircularProgress } from "@mui/material";
-import classes from "./Loader.module.scss";
+import LoaderStyled from "./LoaderStyled";
 
 const Loader = () => {
  
   return (
-    <div  className={classes.container}>
-      <CircularProgress  className={classes.spinnerBase} />
-  </div>
+    <LoaderStyled>
+        <CircularProgress />
+    </LoaderStyled>
   );
 }
 

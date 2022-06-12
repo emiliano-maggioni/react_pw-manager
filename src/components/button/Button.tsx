@@ -1,10 +1,9 @@
-import React  from 'react'
-import classes from "./Button.module.scss";
+import ButtonStyled from './ButtonStyled';
 
 const Button = (props:any) => {
  
   return (
-    <button  className={classes.container} onClick={props.onClick} {...props} > {props.text}</button>
+    <ButtonStyled  onClick={props.onClick} {...props}> {props.text}</ButtonStyled>
   );
 }
 

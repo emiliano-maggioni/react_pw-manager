@@ -1,4 +1,3 @@
-@import "./Utility";
 
 /**** GENERAL STYLES ***/
 html{
@@ -8,14 +7,13 @@ figure{
   padding:0.4rem;
   margin:0px;
 }
+
 body{
-  font-family: $defamily;
-  font-size: 0.9rem;
-  line-height: 1.2rem;
-  color: $textColor;
+  font-weight: 300;
+  font-size: 1.12rem;
+  line-height: 1.5rem;
   overflow: hidden;
 }
-
 body *{
   box-sizing: border-box;
 }
@@ -24,47 +22,16 @@ body *{
     height: 100vh;
 }
 
-main{
-  height:calc(100vh - $headerHeightM);
-  margin-top: $headerHeightM;
-  background:$white;
-  z-index:$indexLow;  
-  overflow:auto;
-  overflow-x:hidden;
-  overflow-y:scroll;  
-}
-
-main>section {
-  box-sizing: border-box;  
-  padding: $paddingViews;
-  min-height: calc(100vh - $headerHeightM);
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-bottom:2.5rem;
-}
-
 div p.MuiFormHelperText-root{
   color:#ff0000;
 }
 label.MuiFormLabel-root.Mui-focused{
-  color:$titleColor;
+  color: #DD373E;
 }
 
 div.MuiOutlinedInput-root.Mui-focused fieldset.MuiOutlinedInput-notchedOutline{
-  border-color: $titleColor;
+  border-color: #DD373E
 }
 
 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  main {
-    margin-top: $headerHeight;
-    height: calc(100% - $headerHeight);
-  }
-
-  main>section {    min-height: calc(100vh - $headerHeight);   }
-
-
-}
 
