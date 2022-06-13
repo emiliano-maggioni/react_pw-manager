@@ -1,5 +1,5 @@
 import './Normalize.css';
-import "./App.scss";
+import "./App.css";
 import { BrowserRouter } from 'react-router-dom';
 import Routing from "./routes/Routing";
 import Header from "./components/header/Header";

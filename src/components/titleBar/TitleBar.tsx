@@ -6,7 +6,7 @@ const TitleBar = ({ title }: titleBarProps) => {
 
   return (
     <TitleBarStyled>
-      <h2>{title}</h2>
+      <h2  data-testid="h2Title">{title}</h2>
      </TitleBarStyled>
   );
 }

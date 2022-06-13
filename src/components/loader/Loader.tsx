@@ -4,7 +4,7 @@ import LoaderStyled from "./LoaderStyled";
 const Loader = () => {
  
   return (
-    <LoaderStyled>
+    <LoaderStyled  data-testid="loader">
         <CircularProgress />
     </LoaderStyled>
   );

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import variables from "Utility"
+import styled from 'styled-components';
+import variables from "Utility" 
 
 const ButtonStyled = styled.button`
 
