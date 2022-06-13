@@ -1,0 +1,57 @@
+
+/**** GENERAL STYLES ***/
+html{
+  font-size:16px;
+}
+figure{
+  padding:0.4rem;
+  margin:0px;
+}
+
+body{
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+  overflow: hidden;
+}
+body *{
+  box-sizing: border-box;
+}
+#root{
+    width: 100%;
+    height: 100vh;
+}
+
+/* OVERRIDE STYLE FOR MUI ELEMENTS */
+div p.MuiFormHelperText-root{
+  color:#ff0000;
+}
+label.MuiFormLabel-root.Mui-focused{
+  color: #DD373E;
+}
+
+div.MuiOutlinedInput-root.Mui-focused fieldset.MuiOutlinedInput-notchedOutline{
+  border-color: #DD373E
+}
+input.MuiInputBase-input{padding: 16.5px 14px;}
+
+.stepActive .MuiStepIcon-root {
+  color: #27275c;
+}
+
+span.MuiFormControlLabel-label {
+  font-size: 1.05rem;  
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.btDisabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+
+
+
