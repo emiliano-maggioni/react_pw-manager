@@ -22,6 +22,7 @@ body *{
     height: 100vh;
 }
 
+/* OVERRIDE STYLE FOR MUI ELEMENTS */
 div p.MuiFormHelperText-root{
   color:#ff0000;
 }

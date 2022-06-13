@@ -3,9 +3,10 @@ import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
+import { stepperBaseProps } from "utility/Types";
 
 
-const StepperBase = ({steps = [], showLabel = false, actualStep}: any) => {
+const StepperBase = ({steps = [], showLabel = false, actualStep}: stepperBaseProps) => {
 
   return (
     <StepperBaseStyled>

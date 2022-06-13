@@ -12,10 +12,10 @@ import { Checkbox, FormControlLabel } from '@mui/material';
 import { useContext } from 'react';
 import { GenericContext } from 'contexts/GenericContext'; 
 import { useNavigate } from "react-router-dom";  
-
+ 
 const HomeView = () => {
   let navigate = useNavigate();
-  const [adultCheck, setAdultCheck] = useState(false);
+  const [adultCheck, setAdultCheck] = useState<boolean>(false);
   const context = useContext(GenericContext);
   const viewNextPage = () => {
     context.changeStepState(2);

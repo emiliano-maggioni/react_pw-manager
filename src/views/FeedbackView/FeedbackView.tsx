@@ -11,14 +11,13 @@ import Loader from 'components/loader/Loader';
 import { userPasswordData } from 'utility/Types';
 
 const FeedbackView = () => { 
-  const [resultAPI, setResultAPI] = useState<any>(null);
+  const [resultAPI, setResultAPI] = useState<string | null>(null);
   let navigate = useNavigate();
   const context = useContext(GenericContext);
-  console.log("-> USER DATA:",context.userPwData);
 
   const saveUserPassword = async (userData:userPasswordData) => {
     const data = await postAPI("userPassword.json",userData);
-      if(data && data != "ERROR" && userData.pista){        
+      if(data && data != "ERROR" && userData.pista){  
         context.resetUserPwData();
         setResultAPI("OK");
       }

@@ -20,7 +20,7 @@ export const GenericContext = createContext<GenericContextModel>({
 
 export const GenericContextProvider = (props:any) => {      
     const [actualStep,setActualStep] = useState<number>(1);   
-    const [userPwData,setUserPwData] = useState<any>("");      
+    const [userPwData,setUserPwData] = useState<userPasswordData | string>("");      
     
     const changeStepState = (step:number)=>{ 
         if(step){    

@@ -11,7 +11,7 @@ const Header = () => {
   
   return (
     <HeaderStyled >
-      <div >
+      <div>
         <h1 onClick={() => navigate("/")} >OpenClose password manager</h1>
       </div>
       <div>

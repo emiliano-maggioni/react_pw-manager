@@ -10,7 +10,7 @@ const LoaderStyled = styled.div`
     padding: 3rem 0rem;
 
     & span {
-        color:${variables.titleFamily};
+        color:${variables.red};
         margin:0 auto;
     }
     

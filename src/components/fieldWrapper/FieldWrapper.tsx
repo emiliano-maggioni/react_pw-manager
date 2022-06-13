@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
 import { fieldWrapperProps } from 'utility/Types';
 import FieldWrapperStyled from './FieldWrapperStyled';
 
-const FieldWrapper = ({ title, required = false, children, additionalClass }: fieldWrapperProps) => {
+const FieldWrapper = ({ title, required = false, children }: fieldWrapperProps) => {
 
   return (
     <FieldWrapperStyled> 

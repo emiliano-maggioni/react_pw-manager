@@ -35,7 +35,6 @@ const CreatePasswordView = () => {
 
   const onSubmit = (data: any) => {
     if(data) {     
-
       context.storeUserPwData(data);   
       viewNextPage();
     }

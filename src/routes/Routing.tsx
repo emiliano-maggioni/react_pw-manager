@@ -7,7 +7,6 @@ const Routing = () => {
 
   return (
       <Routes>
-        {/* <Route path='/details/:id' element={<DefaultDetailsView />} />   */}
         <Route path='/feedback' element={<FeedbackView />} />
         <Route path='/create-password' element={<CreatePasswordView />} />
         <Route path='/' element={<HomeView />} />
