@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import variables from "Utility"
 
 export const MainStyled = styled.main`
+
   height:calc(100vh - ${variables.headerHeightM});
   margin-top: ${variables.headerHeightM};
   background:${variables.white};
@@ -14,12 +15,10 @@ export const MainStyled = styled.main`
 
   & > section{
         box-sizing: border-box;  
-        padding: ${variables.paddingViews};
         min-height: calc(100vh - ${variables.headerHeightM});
         display: flex;
         flex-direction: column;
-        width: 100%;
-        padding-bottom:2.5rem;
+        width: 100%;        
    }   
    
     /* Large devices (desktops, 992px and up) */

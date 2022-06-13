@@ -1,14 +1,17 @@
 import Button from 'components/button/Button';
-import { useNavigate } from "react-router-dom";
+import ButtonBack from 'components/buttonBack/ButtonBack';
 import NavigationBarStyled from './NavigationBarStyled';
 
 
-const NavigationBar = (props:any) => {
-  let navigate = useNavigate();
+const NavigationBar = ({actualStep, btNextEnabled = true, btPrevAction, btNextAction, typeBtNext = "button"}: any) => {
+  
   return (
     <NavigationBarStyled>
-         <Button  text="Cancelar" onClick={()=> navigate(props.btPath)} />  <Button  text="Siguiente" onClick={()=> navigate(props.btPath)} />
-     </NavigationBarStyled>
+        <div>
+              <ButtonBack text="Cancelar" onClick={btPrevAction} disabled={(actualStep == 1)} className={(actualStep == 1) && "btDisabled"} />
+              <Button text="Siguiente" onClick={btNextAction} disabled={!btNextEnabled} className={(!btNextEnabled) && "btDisabled"} type={typeBtNext} />
+        </div>
+    </NavigationBarStyled>
   );
 }
 

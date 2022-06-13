@@ -1,14 +1,12 @@
 import Button from 'components/button/Button';
-import { useNavigate } from "react-router-dom";
+import { titleBarProps } from 'utility/Types';
 import TitleBarStyled from './TitleBarStyled';
 
+const TitleBar = ({ title }: titleBarProps) => {
 
-const TitleBar = (props:any) => {
-  let navigate = useNavigate();
   return (
     <TitleBarStyled>
-      <h2>{props.title}</h2>
-      {(props.btText && props.btPath) &&  <Button  text={props.btText} onClick={()=> navigate(props.btPath)} />   }
+      <h2>{title}</h2>
      </TitleBarStyled>
   );
 }

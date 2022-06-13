@@ -10,7 +10,8 @@ figure{
 
 body{
   font-weight: 300;
-  font-size: 1.12rem;
+  // font-size: 1.12rem;
+  font-size: 1.05rem;
   line-height: 1.5rem;
   overflow: hidden;
 }
@@ -32,6 +33,25 @@ label.MuiFormLabel-root.Mui-focused{
 div.MuiOutlinedInput-root.Mui-focused fieldset.MuiOutlinedInput-notchedOutline{
   border-color: #DD373E
 }
+input.MuiInputBase-input{padding: 16.5px 14px;}
+
+.stepActive .MuiStepIcon-root {
+  color: #27275c;
+}
+
+span.MuiFormControlLabel-label {
+  font-size: 1.05rem;  
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.btDisabled {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
 
 
 

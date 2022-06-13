@@ -8,12 +8,22 @@ display: flex;
     align-items: center;
 
     & svg {
-    width:10rem;  
+    width:7rem;  
     max-width: 100%;  
     height:auto;
     margin-bottom: 1rem;
     opacity: 0.8;
     }
+
+            
+    @media (min-width: 992px) {
+
+        & svg {
+    width:10rem;  
+    }
+
+
+}
 
 
 `;

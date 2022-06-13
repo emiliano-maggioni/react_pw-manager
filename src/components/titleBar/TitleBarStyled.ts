@@ -6,17 +6,17 @@ const TitleBarStyled = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding:  1.1rem 1rem 1.6rem 1rem;
+    padding:  1.2rem 1rem 1.6rem 1rem;
     color:${variables.titleColor};
     min-height:6rem;
 
     & h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         margin: 0px;
         display: flex;
         flex-direction: column;
         font-family:${variables.titleFamily};
-        line-height: 2.4rem;
+        line-height: 2.1rem;
         font-weight:800;
     }
 
@@ -37,10 +37,10 @@ const TitleBarStyled = styled.div`
     
     @media (min-width: 992px) {
         padding: 1.7rem 1rem 2.3rem 1rem;
-            
-        & button h2{
-            font-size: 2.2rem;
+        & h2 {
+            font-size: 1.86rem; 
         }
+        
       }
 
 `;

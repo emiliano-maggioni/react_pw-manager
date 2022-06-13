@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import variables from "Utility"
 
 export const HomeViewStyled = styled.section`
-    padding: 1.2rem 0.46rem;  
     display:flex;
     align-items:center;
     flex-direction:column;
+    padding-top: 0.5rem;
     & > div{
         width: ${variables.contentWidth}; 
         max-width: 100%; 
@@ -22,13 +22,29 @@ export const StepContainerStyled = styled.div`
     margin: 0 auto;
     justify-content: space-around;
     max-width: 100%; 
-    padding:4rem 1rem 3rem 1rem;
-
+    padding:1.4rem 1rem 1rem 1rem;
+    flex-wrap: wrap;
+            
     & > article{
         width: 22rem;
-        max-width: 50%;
         padding: 0.8rem;
     }
+        
+    @media (min-width: 992px) {
+        padding:4rem 1rem 3rem 1rem;
+
+        & > article{
+            max-width: 50%;
+        }
     
+        
+    }
+
+`;
+
+export const CheckAgeBoxStyled = styled.div`
+    display: flex;
+    width: 100%; 
+    padding: 1rem;
 `;
 

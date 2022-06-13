@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import variables from "Utility"
 
-const ButtonStyled = styled.button`
+const ButtonBackStyled = styled.button`
 
     border:1px solid ${variables.white};
-    background: ${variables.green};
+    background: ${variables.blueLighter};
     color:  ${variables.white};
     padding: 0rem 1.2rem;
     border-radius: 0.4rem;
@@ -21,16 +21,16 @@ const ButtonStyled = styled.button`
 
     &:focus  {
         border:1px solid ${variables.white};
-        background: ${variables.green};
+        background: ${variables.blueLighter};
         color:  ${variables.white};
     }
 
     &:hover  {
-        border:1px solid ${variables.green};
+        border:1px solid ${variables.blueLighter};
         background: ${variables.white};
-        color: ${variables.green};
+        color: ${variables.blueLighter};
     }
 
 `;
 
-export default ButtonStyled;
+export default ButtonBackStyled;

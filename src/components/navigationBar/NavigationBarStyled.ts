@@ -4,11 +4,19 @@ import variables from "Utility"
 const NavigationBarStyled = styled.div`
 
     display: flex;
-    width: ${variables.contentWidth}; 
-    max-width: 100%; 
-    padding:  1rem;
-    justify-content:space-between;
-    background: #f7f7fb;
+    justify-content:center; 
+    width: 100%; 
+    padding:2rem 0rem;
+    border-top: 1px solid #e8e8ff;
+    margin-top: 1rem;
+
+    &  > div {
+        width: ${variables.contentWidth}; 
+        max-width: 100%;  
+        padding: 0rem 1rem;
+        display: flex;           
+        justify-content:space-between; 
+    }
     
 `;
 

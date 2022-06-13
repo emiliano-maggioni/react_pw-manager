@@ -34,7 +34,7 @@ font-family: ${variables.defFamily};
     }
 
     & > div:first-child > h1{
-        font-size: 1.75rem;
+        font-size: 1.8rem;
         line-height: 2.1rem;
         font-family: ${variables.titleFamily};
         color:${variables.white};
@@ -44,13 +44,12 @@ font-family: ${variables.defFamily};
     & > div:last-child{
         width:100%;
         display: flex;
-        height: 2.4rem;
+        height: 2.9rem;
         align-items: center;
         padding-right: 1rem;
-        justify-content: flex-end;
-        background:${variables.redDarker};
+        justify-content: center;
+        background:${variables.redLighter};
         font-size: 1.25rem;
-        border-bottom: 1px solid ${variables.white};
     }
 
     
@@ -61,11 +60,11 @@ font-family: ${variables.defFamily};
             height: 7.6rem;
         }
         & > div:first-child > h1{            
-            font-size: 3.4rem;
+            font-size: 2.6rem;
             margin-left: 0.6rem;
         }
         & > div:last-child{            
-            height:  2.7rem;
+            height:  3.7rem;
         }
         
       }
