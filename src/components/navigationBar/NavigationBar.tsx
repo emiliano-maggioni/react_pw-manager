@@ -1,8 +1,9 @@
 import Button from 'components/button/Button';
 import ButtonBack from 'components/buttonBack/ButtonBack';
+import { navigationBarProps } from 'utility/Types';
 import NavigationBarStyled from './NavigationBarStyled';
 
-const NavigationBar = ({actualStep, btNextEnabled = true, btPrevAction, btNextAction, typeBtNext = "button"}: any) => {
+const NavigationBar = ({actualStep, btNextEnabled = true, btPrevAction, btNextAction, typeBtNext = "button"}: navigationBarProps) => {
 let disabled;
 if(actualStep == 1)
   disabled = true;
