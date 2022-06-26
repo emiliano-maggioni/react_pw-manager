@@ -1,20 +1,18 @@
-import ReactDOM from "react-dom";
 import Button from "../Button";
-import { isTSAnyKeyword } from '@babel/types';
-import { render } from '@testing-library/react';
-// import "@testing-library/jest-dom/extend-expect"; 
+import "@testing-library/jest-dom/extend-expect";  
 
+import { render, cleanup } from "@testing-library/react";
 
+afterEach(cleanup); 
 
-it("Renders without crashing", () => {
-    const div = document.createElement("div");
-    ReactDOM.render(<Button></Button>,div) 
+it("renders button correctly", () => {
+    const  { getByTestId } = render(<Button text="Siguiente"></Button>)
+    expect(getByTestId("button")).toHaveTextContent("Siguiente");
 })
-
-
-// it("renders button correctly", () => {
-//     const  { getByTestId } = render(<Button text="Siguiente"></Button>)
-//     expect(getByTestId("button")).toHaveTextContent("Siguiente");
-// })
+ 
+it("check if button is Enabled", () => {
+    const  { getByTestId } = render(<Button text="Siguiente"  disabled={true}></Button>)
+    expect(getByTestId("button")).not.toBeEnabled;
+})
  
  

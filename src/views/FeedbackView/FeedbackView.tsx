@@ -18,7 +18,7 @@ const FeedbackView = () => {
 
   const saveUserPassword = async (userData: userPasswordData) => {
     const data = await postAPI("userPassword.json", userData);
-    if (data && data != "ERROR") {
+    if(data && data != "ERROR") {
       context.resetUserPwData();
       setResultAPI("OK");
     }
@@ -31,8 +31,12 @@ const FeedbackView = () => {
 
   useEffect(() => {
     //Save user password on first render
-    if (resultAPI == null)
-      saveUserPassword(context.userPwData);
+    if (resultAPI == null){
+      if(context.userPwData.password != "pruebaKO123")
+        saveUserPassword(context.userPwData);
+      else
+        setResultAPI("KO"); 
+    }
   }, []);
 
   const viewHomePage = () => {

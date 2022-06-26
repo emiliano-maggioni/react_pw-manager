@@ -1,9 +1,12 @@
-import ReactDOM from "react-dom";
 import Loader from "../Loader";
+import "@testing-library/jest-dom/extend-expect";  
+import { render, cleanup } from "@testing-library/react";
+
+afterEach(cleanup); 
 
 
-it("Loader Renders without crashing", () => {
-    const div = document.createElement("div");
-    ReactDOM.render(<Loader></Loader>,div) 
+it("renders button correctly", () => {
+    const  { getByTestId } = render(<Loader />)
+    expect(getByTestId("loader")).toBeVisible;
 })
 

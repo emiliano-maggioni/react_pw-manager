@@ -13,7 +13,9 @@ The project has this folder structure:<br /><br />
 <br />
 
 This excercise is done with ReactJS, Typescript for the type management and to detect errors easily at the time of development (pre-compilation).
-I used styled components, putting the style components in separate files for a better organization, Material UI for the icons and some elements (like the page steps component) for the form i've used react-hook-form, with Material UI (for the single inputs). The routing is done with react-router-dom 
+I used styled components, putting the style components in separate files for a better organization, Material UI for the icons and some elements (like the page steps component) for the form i've used react-hook-form, with Material UI (for the single inputs). The routing is done with react-router-dom.
+The tests are done with jest library, i've tested component like TitleBar, Button and Loader.
+
 
 <br />
 
