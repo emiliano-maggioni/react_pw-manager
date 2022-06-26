@@ -17,7 +17,7 @@ const FeedbackView = () => {
 
   const saveUserPassword = async (userData:userPasswordData) => {
     const data = await postAPI("userPassword.json",userData);
-      if(data && data != "ERROR" && userData.pista){  
+      if(data && data != "ERROR"){  
         context.resetUserPwData();
         setResultAPI("OK");
       }
