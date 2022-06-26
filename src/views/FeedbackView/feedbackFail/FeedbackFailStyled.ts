@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import variables from "Utility"
 
 const FeedbackFailStyled = styled.div`
 

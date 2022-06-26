@@ -1,6 +1,4 @@
 import TitleBar from 'components/titleBar/TitleBar';
-import { getAPI } from 'utility/callsAPI';
-import Loader from 'components/loader/Loader';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LockResetIcon from '@mui/icons-material/LockReset';
 import Step from './Step/Step';
@@ -17,11 +15,11 @@ const HomeView = () => {
   let navigate = useNavigate();
   const [adultCheck, setAdultCheck] = useState<boolean>(false);
   const context = useContext(GenericContext);
+
   const viewNextPage = () => {
     context.changeStepState(2);
     navigate("/create-password");
   }
-
   
   return (
     <HomeViewStyled>      

@@ -1,6 +1,6 @@
 import TitleBar from 'components/titleBar/TitleBar';
 import NavigationBar from 'components/navigationBar/NavigationBar';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { CreatePasswordViewStyled, RowFieldStyled, RowMultipleFieldStyled } from './CreatePasswordViewStyled';
 import { useContext } from 'react';
 import { GenericContext } from 'contexts/GenericContext';
@@ -9,16 +9,13 @@ import FieldWrapper from 'components/fieldWrapper/FieldWrapper';
 import { useForm } from "react-hook-form";
 import { FormHelperText, IconButton, InputAdornment, OutlinedInput, TextField } from '@mui/material';
 import { VisibilityOff, Visibility } from '@mui/icons-material';
+import { useCheckActualStep } from 'utility/hooks';
 
 const CreatePasswordView = () => {
   let navigate = useNavigate();
   const context = useContext(GenericContext);
 
-  useEffect(()=>{
-    //REDIRECT TO HOMEPAGE IF CONTEXT actualStep IS NOT EQUAL TO THIS STEP
-    if(context.actualStep != 2)
-    viewPrevPage();
-  },[]);
+  useCheckActualStep(2);
 
   const viewPrevPage = () => {
     context.changeStepState(1);
@@ -85,7 +82,9 @@ const CreatePasswordView = () => {
                   </InputAdornment>
                 }
               />
+              {//@ts-ignore
               <FormHelperText>{!!errors.password ? errors.password.message : null}</FormHelperText>
+            }
             </FieldWrapper>
 
             <FieldWrapper title="Repite tu contraseña maestra" required={true}  >
@@ -117,7 +116,9 @@ const CreatePasswordView = () => {
                   </InputAdornment>
                 }
               />
+              {//@ts-ignore
               <FormHelperText>{!!errors.confirmpassword ? errors.confirmpassword.message : null}</FormHelperText>
+              }
             </FieldWrapper>
 
         </RowMultipleFieldStyled>
