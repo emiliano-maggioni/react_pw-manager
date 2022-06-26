@@ -13,6 +13,7 @@ export const HomeViewStyled = styled.section`
     & > div:last-child{
         width: 100%; 
     }
+
       
 `;
 

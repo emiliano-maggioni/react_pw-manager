@@ -9,7 +9,6 @@ const Step = ({ text, children }: stepProps) => {
       <span>{text}</span>
     </StepStyled>
   );
-  
 }
 
 export default Step;
